@@ -5,25 +5,50 @@
     <title>Google</title>
     <style>
       body {
-        font-family: Roboto, Arial, sans-serif
+        font-family: Roboto, Arial, sans-serif;
+        
       }
-      div {
-        position: absolute;
-      }
+		a{
+        	margin: 0.5em;
+            color: grey;
+        }
       .left{
+		display: flex;
+        position: absolute;
         left: 5%;
-      }
+        
+    }
       .right {
+      	display: flex;
+        position: absolute;
         right: 5%;
       }
+      #buttons{
+      	display: flex;
+      }
+      
       button {
         font-family: Roboto, Arial, sans-serif
       }
-
+		
+      #images{
+      	margin-right: 2em;
+      }
       #products{
-  clip-path: polygon(26% 55%, 30% 55%, 30% 100%, 26% 100%);
-}
-
+ 		 clip-path: polygon(26% 55%, 30% 55%, 30% 100%, 26% 100%);
+		display: block;
+        position: absolute;
+        right: -140%;
+        top: -100%
+}	
+	#center{
+    	position: absolute;
+        top: 25%;
+        left: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+        
       footer {
         position: fixed;
         left: 0;
@@ -45,22 +70,31 @@
     </div>
     <div class = "right">
     <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
-    <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
-    
+    <a id = "images" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
     <img id = "products" src="http://ssl.gstatic.com/gb/images/i1_1967ca6a.png">
     <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Sign In</a>
     </div>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        
+	
+    <div id = "center">
+    <img id = "logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
     <input type="search" id="search" name="search">
+    <div id = "buttons">
     <button>Google Search</button>
     <button>I'm Feeling Lucky</button>
+    </div>
+	</div>
       <footer>
+      <div class = "left">
         <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjUhabdj_PoAhU6kHIEHdQ0BmEQkdQCCBg&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a>
         <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiEwYrejvPoAhXSlnIEHcz5BfEQktQCCBk&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
         <a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
+        </div>
+        <div class = "right">
         <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiEwYrejvPoAhXSlnIEHcz5BfEQ8awCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri">Privacy</a>
         <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiEwYrejvPoAhXSlnIEHcz5BfEQ8qwCCBU&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n">Terms</a>
         <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiEwYrejvPoAhXSlnIEHcz5BfEQzq0CCBY&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den&usg=AOvVaw0XvhSqpc_GFt9aG_mRLp1F">Settings</a>
+        </div>
       </footer>
  
   </body>
