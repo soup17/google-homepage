@@ -6,40 +6,52 @@
     <style>
       body {
         font-family: Roboto, Arial, sans-serif;
-        
+        font-size: 12px;
       }
 		a{
-        	margin: 0.5em;
+        	margin-left: 0.8em;
+          margin-right: 0.8em;
             color: grey;
         }
       .left{
 		display: flex;
         position: absolute;
         left: 5%;
-        
+        margin-top: 0.5em
     }
       .right {
       	display: flex;
         position: absolute;
         right: 5%;
+        margin-top: 0.5em
       }
       #buttons{
       	display: flex;
       }
       
       button {
-        font-family: Roboto, Arial, sans-serif
+        font-family: Roboto, Arial, sans-serif;
       }
-		
+      #sign-in button{
+        font-size: 12px;
+        border: none;
+        border-radius: 0.1em;
+        background-color: CornflowerBlue; 
+        color: white; 
+        height: 2.5em; 
+        width: 5em;
+        margin-left: 1em;
+      }
       #images{
       	margin-right: 2em;
       }
       #products{
- 		 clip-path: polygon(26% 55%, 30% 55%, 30% 100%, 26% 100%);
-		display: block;
+ 		    clip-path: polygon(26% 55%, 30% 55%, 30% 100%, 26% 100%);
+		    display: block;
         position: absolute;
-        right: -140%;
-        top: -100%
+        right: -135%;
+        top: -150%;
+        opacity: 0.6;
 }	
 	#center{
     	position: absolute;
@@ -72,7 +84,7 @@
     <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
     <a id = "images" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
     <img id = "products" src="http://ssl.gstatic.com/gb/images/i1_1967ca6a.png">
-    <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Sign In</a>
+    <a id = "sign-in" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/"><button><b>Sign In</b></button></a>
     </div>
         
 	
@@ -96,7 +108,5 @@
         <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiEwYrejvPoAhXSlnIEHcz5BfEQzq0CCBY&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den&usg=AOvVaw0XvhSqpc_GFt9aG_mRLp1F">Settings</a>
         </div>
       </footer>
- 
   </body>
-
 </html>
