@@ -1,0 +1,24 @@
+body {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    }
+a {
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    color: grey;
+    text-decoration: none;
+    }
+button {
+    font-family: Roboto, Arial, sans-serif;
+    border: none;
+    border-radius: 0;
+    }
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    height: 40px;
+    }
